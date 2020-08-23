@@ -21,10 +21,4 @@ class RegisterForm(forms.Form):
     sex = forms.ChoiceField(label='性别', choices=gender)
     captcha = CaptchaField(label='验证码')
 
-# class ECGData(forms.Form):
-#     client_name = forms.CharField(label='佩戴用户',max_length=256)
-#     begin_time = forms.DateTimeField(label='记录起始时间')
-#     end_time = forms.DateTimeField(label='记录结束时间')
-#     ecg = forms.TextField(label='心率数据')
-#     ecg_label = forms.TextField(label='心率分类')
 

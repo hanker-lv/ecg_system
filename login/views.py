@@ -9,6 +9,7 @@ def index(request):
     if not request.session.get('is_login', None):
         return redirect('/login/login/')
 
+    # name = request.session.user_name
     ecg = an_models.ECGData.objects.get(client_name='yzy')
     return render(request, 'login/index.html', {'ecg': ecg})
 
